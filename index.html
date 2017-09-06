@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms!</title>
+  </head>
+  <body>
+    <h1>Welcome to Forms!</h1>
+    <form action="/sendToWebsite" method="post">
+      <fieldset>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name Here!" required>
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" value="Email here" required>
+        <br>
+        <br>
+        <input type="file" name="file" placeholder="Put file here!">
+        <br>
+        <br>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <br>
+        <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+        <label for="subscribeNews">Subscribe to newsletter?</label>
+        <br>
+        <br>
+        <input type="password" name="password" placeholder="Password">
+        <br>
+        <br>
+        <label for="comments">Comments:</label>
+        <br>
+        <textarea name="comments" rows="8" cols="80">Write comments in here.</textarea>
+        <br>
+        <br>
+        <label for="radio">Check Me!</label>
+        <input type="radio" name="radio" id="radio">
+        <br>
+        <br>
+        <label for="mood">What is your mood?</label>
+        <select class="" name="mood">
+          <option value=""></option>
+          <option value="Grey">Grey</option>
+          <option value="Red">Red</option>
+          <option value="Green">Green</option>
+          <option value="Happy">Happy</option>
+          <option value="Meh">Meh</option>
+          <option value="Sad">Sad</option>
+          <option value="Rainy">Rainy</option>
+          <option value="Confused" >Confused</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+          <button type="submit" name="button" autofocus>Submit Info</button>
+          <br>
+          <br>
+          <button type="reset" name="button">Reset</button>
+          <br>
+          <br>
+          <button type="button" name="button">Button button, who's got the button?</button>
+        </fieldset>
+      </fieldset>
+    </form>
+  </body>
+</html>
